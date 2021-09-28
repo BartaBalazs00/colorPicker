@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35sp"
+        android:id="@+id/sb_red"
+        android:min="0"
+        android:max="255"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35sp"
+        android:id="@+id/sb_green"
+        android:layout_below="@id/sb_red"
+        android:min="0"
+        android:max="255"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_green"
+        android:minHeight="35sp"
+        android:id="@+id/sb_blue"
+        android:min="0"
+        android:max="255"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(0,0,0)"
+        android:id="@+id/text_view"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
